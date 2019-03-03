@@ -1,0 +1,49 @@
+{
+  "name": "task",
+  "version": "0.1.0",
+  "private": true,
+  "description": "task",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "npm run build",
+    "start": "node build/index.js",
+    "build": "tsc",
+    "development": "nodemon --watch src --exec ts-node src/index.ts",
+    "lint": "tslint --project tsconfig.json --format stylish"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/bcrypt": "^3.0.0",
+    "@types/dotenv": "^6.1.0",
+    "@types/jsonwebtoken": "^8.3.0",
+    "@types/koa": "^2.0.48",
+    "@types/koa-bodyparser": "^4.2.1",
+    "@types/koa-helmet": "^3.1.2",
+    "@types/koa-router": "^7.0.39",
+    "@types/koa2-cors": "^2.0.1",
+    "@types/node": "^10.12.18",
+    "nodemon": "^1.18.7",
+    "ts-node": "^8.0.2",
+    "typescript": "^3.2.4"
+  },
+  "dependencies": {
+    "bcrypt": "^3.0.4",
+    "class-validator": "^0.9.1",
+    "dotenv": "^6.2.0",
+    "jsonwebtoken": "^8.4.0",
+    "koa": "^2.6.2",
+    "koa-basic-auth": "^4.0.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-helmet": "^4.0.0",
+    "koa-jwt": "^3.5.1",
+    "koa-logger": "^3.2.0",
+    "koa-router": "^7.4.0",
+    "koa2-cors": "^2.0.6",
+    "mysql": "^2.16.0",
+    "reflect-metadata": "^0.1.13",
+    "tslint": "^5.13.1",
+    "tslint-config-airbnb": "^5.11.1",
+    "typeorm": "^0.2.12"
+  }
+}
